@@ -9,8 +9,6 @@ SET(CMAKE_CXX_FLAGS "-g -Wall -std=c++11")
 find_package(Boost COMPONENTS date_time system thread)
 find_package(Threads REQUIRED)
 
-TARGET_LINK_LIBRARIES(lpthread)
-
 include_directories(
     ${PROJECT_SOURCE_DIR}
     ${PROJECT_SOURCE_DIR}/common/asn1/
